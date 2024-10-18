@@ -4,9 +4,9 @@
         <attribute name="name" value="Pair28-M01"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:39:47 AM"/>
+        <attribute name="saved" value="2024-10-18 11:48:55 AM"/>
         <attribute name="created" value="VXNlcjtMQVBUT1AtMENFUEdBQUg7MjAyNC0xMC0xODswOTo1Mzo0NiBBTTsyNzM1"/>
-        <attribute name="edited" value="VXNlcjtMQVBUT1AtMENFUEdBQUg7MjAyNC0xMC0xODsxMTozOTo0NyBBTTs1OzI4NDU="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtMENFUEdBQUg7MjAyNC0xMC0xODsxMTo0ODo1NSBBTTs2OzI4NDU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -60,7 +60,7 @@
                     </else>
                 </if>
                 <assign variable="PerformaMatkul" expression="Tointeger(Kredit)*Angka"/>
-                <output expression="PerformaMatkul" newline="True"/>
+                <output expression="ToFixed(PerformaMatkul,1)" newline="True"/>
                 <input variable="Kredit"/>
             </while>
         </body>

@@ -1,7 +1,10 @@
 import java.util.*;
 import java.lang.Math;
 
-public class M01 {
+import java.util.*;
+import java.lang.Math;
+
+public class m01 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -37,8 +40,12 @@ public class M01 {
                 }
             }
             performaMatkul = Integer.parseInt(kredit) * angka;
-            System.out.println(performaMatkul);
+            System.out.println(toFixed(performaMatkul,1));
             kredit = input.nextLine();
         }
+    }
+    
+    private static String toFixed(double value, int digits) {
+        return String.format("%." + digits + "f", value);
     }
 }
