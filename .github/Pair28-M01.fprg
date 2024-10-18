@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pair28-M01"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 10:31:09 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtMENFUEdBQUg7MjAyNC0xMC0xODswOTo1Mzo0NiBBTTsyNzM1"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtMENFUEdBQUg7MjAyNC0xMC0xODsxMDozMTowOSBBTTsyOzI4MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Kredit, Huruf" type="String" array="False" size=""/>
+            <declare name="PerformaMatkul, Angka" type="Real" array="False" size=""/>
+            <input variable="Kredit"/>
+            <while expression="Kredit!=&quot;---&quot;">
+                <input variable="Huruf"/>
+                <if expression="Huruf=&quot;A&quot;">
+                    <then>
+                        <assign variable="Angka" expression="4.0"/>
+                    </then>
+                    <else>
+                        <if expression="Huruf=&quot;AB&quot;">
+                            <then>
+                                <assign variable="Angka" expression="3.5"/>
+                            </then>
+                            <else>
+                                <if expression="Huruf=&quot;B&quot;">
+                                    <then>
+                                        <assign variable="Angka" expression="3.0"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Huruf=&quot;BC&quot;">
+                                            <then>
+                                                <assign variable="Angka" expression="2.5"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Huruf=&quot;C&quot;">
+                                                    <then>
+                                                        <assign variable="Angka" expression="2.0"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="Huruf=&quot;D&quot;">
+                                                            <then>
+                                                                <assign variable="Angka" expression="1.0"/>
+                                                            </then>
+                                                            <else>
+                                                                <assign variable="Angka" expression="0.0"/>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="PerformaMatkul" expression="Tointeger(Kredit)*Angka"/>
+                <output expression="PerformaMatkul" newline="True"/>
+                <input variable="Kredit"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
